@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1a1a1a">
+<title>Springs Estate — Ultra-Luxury Architectural Residences</title>
+<meta name="description" content="Springs Estate represents architecturally significant residences and private estates across the California coast. Where architecture meets nature.">
+<link rel="canonical" href="index.html">
+<meta property="og:title" content="Springs Estate — Where Architecture Meets Nature">
+<meta property="og:description" content="Curated ultra-luxury residences, private estates and off-market opportunities.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%231a1a1a'/%3E%3Cpath d='M20 7v26M7 20h26' stroke='%23d4af37' stroke-width='1.5'/%3E%3Ccircle cx='20' cy='20' r='5.5' stroke='%23d4af37' stroke-width='1.5' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main" style="position:absolute;left:-9999px">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" aria-label="Featured estates">
+    <div class="hero__media hero-swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="hero__slide swiper-slide">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=82"
+               alt="Cliffside modernist residence above the Pacific at dusk" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero__slide swiper-slide">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=82"
+               alt="Infinity pool terrace overlooking the coastline" loading="lazy" decoding="async">
+        </div>
+        <div class="hero__slide swiper-slide">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=82"
+               alt="Glass-walled living room opening to landscaped gardens" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__inner">
+      <div class="hero__eyebrow" data-reveal>
+        <span class="bar"></span>
+        <span class="eyebrow eyebrow--light">Est. 2004 · California Coast</span>
+      </div>
+
+      <h1 class="display hero__title" data-reveal data-reveal-delay="1">
+        Where Architecture <em>Meets</em> Nature
+      </h1>
+
+      <p class="hero__sub" data-reveal data-reveal-delay="2">
+        A private collection of architecturally significant residences and estates,
+        represented with discretion for the world's most discerning owners.
+      </p>
+
+      <div class="hero__actions" data-reveal data-reveal-delay="3">
+        <a class="btn btn--gold" href="residences.html">Explore Residences</a>
+        <a class="btn btn--ghost-light" href="contact.html">Schedule a Private Tour</a>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <b>$1.4B</b><span>Sold to date</span>
+          </div>
+          <div class="hero__stat">
+            <b>48</b><span>Signature estates</span>
+          </div>
+          <div class="hero__stat">
+            <b>21 yrs</b><span>Private representation</span>
+          </div>
+        </div>
+        <div class="hero__controls">
+          <button class="hero__btn" type="button" data-hero-prev aria-label="Previous image">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M11 3L5 9l6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="hero__count" data-hero-count aria-live="polite">01 / 03</span>
+          <button class="hero__btn" type="button" data-hero-next aria-label="Next image">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M7 3l6 6-6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <span class="scroll-hint" aria-hidden="true">Scroll</span>
+  </section>
+
+  <!-- ============================ QUICK SEARCH ============================ -->
+  <div class="shell searchbar-wrap">
+    <form class="searchbar" id="quick-search" novalidate aria-label="Quick property search">
+      <div class="searchbar__grid">
+        <label class="searchbar__cell">
+          <span>Bedrooms</span>
+          <select class="select" name="beds">
+            <option value="all">Any</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
+            <option value="6">6+</option>
+          </select>
+        </label>
+        <label class="searchbar__cell">
+          <span>Square footage</span>
+          <select class="select" name="sqft">
+            <option value="all">Any size</option>
+            <option value="5000">5,000+ sq ft</option>
+            <option value="8000">8,000+ sq ft</option>
+            <option value="10000">10,000+ sq ft</option>
+          </select>
+        </label>
+        <label class="searchbar__cell">
+          <span>Price range</span>
+          <select class="select" name="price">
+            <option value="all">Any price</option>
+            <option value="0-12">Under $12M</option>
+            <option value="12-20">$12M – $20M</option>
+            <option value="20-30">$20M – $30M</option>
+            <option value="30+">$30M and above</option>
+          </select>
+        </label>
+        <label class="searchbar__cell">
+          <span>View</span>
+          <select class="select" name="view">
+            <option value="all">All views</option>
+            <option value="ocean">Ocean</option>
+            <option value="mountain">Mountain</option>
+            <option value="golf">Golf</option>
+            <option value="garden">Garden</option>
+            <option value="city">City</option>
+          </select>
+        </label>
+        <button class="searchbar__go" type="submit">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="m12.5 12.5 3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <span>Search</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ============================ CURATED ESTATES ============================ -->
+  <section class="section section--linen" aria-labelledby="curated-heading">
+    <div class="shell">
+      <div class="section-head">
+        <div data-reveal>
+          <span class="eyebrow">The Signature Collection</span>
+          <h2 class="h1" id="curated-heading">Curated Estates</h2>
+        </div>
+        <div data-reveal data-reveal-delay="1">
+          <p class="lede">
+            Each residence is selected for its architectural integrity, its site,
+            and the quality of light it holds. Viewings are arranged privately.
+          </p>
+          <p style="margin-top:1.5rem">
+            <a class="link-underline" href="residences.html">View all 10 residences</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Alternating editorial layouts injected by main.js -->
+      <div id="featured"></div>
+    </div>
+  </section>
+
+  <!-- ============================ GRID ============================ -->
+  <section class="section section--sand" aria-labelledby="grid-heading">
+    <div class="shell">
+      <div class="section-head">
+        <div data-reveal>
+          <span class="eyebrow">Available Now</span>
+          <h2 class="h2" id="grid-heading">Recently Released</h2>
+        </div>
+        <p data-reveal data-reveal-delay="1" style="margin:0">
+          <a class="link-underline" href="residences.html?status=available">All available residences</a>
+        </p>
+      </div>
+      <div class="grid grid-2" id="estate-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============================ PHILOSOPHY ============================ -->
+  <section class="section section--white" aria-labelledby="philosophy-heading">
+    <div class="shell">
+      <div class="split">
+        <div class="split__media" data-reveal="left">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=82"
+               alt="Interior detail: natural light across stone and timber" loading="lazy" decoding="async">
+        </div>
+        <div class="split__body" data-reveal="right">
+          <span class="eyebrow">Architectural Philosophy</span>
+          <h2 class="h2" id="philosophy-heading">Materials that age with grace</h2>
+          <p class="lede">
+            We represent houses built to be inherited, not replaced. Every residence
+            in the collection is assessed on three measures: the honesty of its
+            materials, the quality of its natural light, and its restraint.
+          </p>
+          <div class="pillars">
+            <div class="pillar">
+              <span class="pillar__no">01</span>
+              <div>
+                <h4>Sustainable Materials</h4>
+                <p>Locally quarried stone, FSC-certified timber and low-carbon concrete, specified for a fifty-year horizon.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar__no">02</span>
+              <div>
+                <h4>Natural Lighting</h4>
+                <p>Orientation, ceiling height and glazing are tuned to the sun path, so rooms need no artificial light by day.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar__no">03</span>
+              <div>
+                <h4>Interior Finishes</h4>
+                <p>Hand-troweled plaster, honed limestone and unlacquered brass — surfaces designed to patinate beautifully.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="statband" style="margin-top:clamp(3.5rem,7vw,6rem)">
+        <div class="statband__item" data-reveal>
+          <b data-count="1400" data-prefix="$" data-suffix="M">$0M</b><span>Transacted volume</span>
+        </div>
+        <div class="statband__item" data-reveal data-reveal-delay="1">
+          <b data-count="48">0</b><span>Signature estates</span>
+        </div>
+        <div class="statband__item" data-reveal data-reveal-delay="2">
+          <b data-count="96" data-suffix="%">0%</b><span>Client referral rate</span>
+        </div>
+        <div class="statband__item" data-reveal data-reveal-delay="3">
+          <b data-count="21">0</b><span>Years of practice</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MAP ============================ -->
+  <section class="section section--sand" aria-labelledby="map-heading">
+    <div class="shell">
+      <div class="section-head">
+        <div data-reveal>
+          <span class="eyebrow">Location & Surroundings</span>
+          <h2 class="h2" id="map-heading">Everything within reach</h2>
+        </div>
+        <p class="lede" data-reveal data-reveal-delay="1">
+          Private aviation, fine dining, championship golf and beach clubs — plotted
+          against every residence in the collection.
+        </p>
+      </div>
+
+      <div class="mapwrap" data-reveal="fade">
+        <div id="map" role="application" aria-label="Interactive map of residences and local amenities"></div>
+        <div class="map-legend">
+          <h4>Legend</h4>
+          <ul>
+            <li><span class="dot" style="background:#1a1a1a"></span> Available residence</li>
+            <li><span class="dot" style="background:#6f6b64"></span> Sold / under contract</li>
+            <li><span class="dot" style="background:#1f3a2b"></span> Private aviation</li>
+            <li><span class="dot" style="background:#d4af37"></span> Fine dining</li>
+            <li><span class="dot" style="background:#2a6b8f"></span> Beach club</li>
+            <li><span class="dot" style="background:#4a7c59"></span> Nature reserve</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA ============================ -->
+  <section class="section section--dark on-dark" aria-labelledby="cta-heading">
+    <div class="shell" style="text-align:center;max-width:900px">
+      <span class="eyebrow eyebrow--light" data-reveal>Private Client Desk</span>
+      <h2 class="h1" id="cta-heading" data-reveal data-reveal-delay="1" style="margin-top:1.5rem">
+        Begin a private conversation
+      </h2>
+      <p class="lede" data-reveal data-reveal-delay="2" style="margin:1.75rem auto 0">
+        Off-market and pre-launch residences are released only to qualified buyers,
+        under NDA. Tell us what you are looking for.
+      </p>
+      <div data-reveal data-reveal-delay="3" style="margin-top:2.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn--gold" href="contact.html">Submit a Private Enquiry</a>
+        <a class="btn btn--ghost-light" href="lifestyle.html">Discover the Lifestyle</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+  /* Tailwind provides utilities only — preflight is disabled so it cannot
+     override the Springs Estate design system in style.css. */
+  tailwind.config = {
+    corePlugins: { preflight: false },
+    theme: {
+      extend: {
+        colors: {
+          linen: "#f9f8f6", sand: "#f2efe9", charcoal: "#1a1a1a",
+          gold: "#d4af37", emerald: "#1f3a2b",
+        },
+        fontFamily: {
+          serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+          sans: ['"Plus Jakarta Sans"', "Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

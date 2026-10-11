@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1a1a1a">
+<title>Inquire — Private Consultation | Springs Estate</title>
+<meta name="description" content="Submit a private enquiry to the Springs Estate client desk. Register your brief, budget and timeline, and request access to off-market residences under NDA.">
+<link rel="canonical" href="contact.html">
+<meta property="og:title" content="Private Consultation — Springs Estate">
+<meta property="og:description" content="Register your brief and request off-market access under NDA.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%231a1a1a'/%3E%3Cpath d='M20 7v26M7 20h26' stroke='%23d4af37' stroke-width='1.5'/%3E%3Ccircle cx='20' cy='20' r='5.5' stroke='%23d4af37' stroke-width='1.5' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main" style="position:absolute;left:-9999px">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+
+  <!-- ============================ PAGE HERO ============================ -->
+  <section class="pagehero pagehero--short" aria-labelledby="contact-heading">
+    <div class="pagehero__img">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=82"
+           alt="Interior of a luxury residence at dusk" fetchpriority="high" decoding="async">
+    </div>
+    <div class="pagehero__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span style="opacity:1">Inquire</span>
+      </nav>
+      <span class="eyebrow eyebrow--light">Private Booking &amp; Consultation</span>
+      <h1 class="h1" id="contact-heading" style="margin-top:1.25rem">Begin a private enquiry</h1>
+      <p class="lede">
+        Four short steps. Your details are held in confidence and never shared
+        without your written consent.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ FORM ============================ -->
+  <section class="shell contact-layout">
+
+    <div class="formcard" data-reveal>
+      <div class="steps" aria-label="Progress">
+        <div class="step is-active">
+          <span class="step__no">1</span><span>About you</span><span class="step__bar"></span>
+        </div>
+        <div class="step">
+          <span class="step__no">2</span><span>Your brief</span><span class="step__bar"></span>
+        </div>
+        <div class="step">
+          <span class="step__no">3</span><span>Timeline</span><span class="step__bar"></span>
+        </div>
+        <div class="step">
+          <span class="step__no">4</span><span>Privacy</span>
+        </div>
+      </div>
+
+      <form id="inquiry-form" novalidate>
+
+        <!-- STEP 1 -->
+        <fieldset class="formstep is-active">
+          <legend class="visually-hidden" style="position:absolute;left:-9999px">About you</legend>
+          <span class="eyebrow">Step one</span>
+          <h3 class="h3">Who are we speaking with?</h3>
+          <div class="formgrid">
+            <label class="field span-2">
+              <span>Full name *</span>
+              <input class="input" type="text" name="name" placeholder="Your full name" required autocomplete="name">
+            </label>
+            <label class="field">
+              <span>Email address *</span>
+              <input class="input" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </label>
+            <label class="field">
+              <span>Phone / WhatsApp *</span>
+              <input class="input" type="tel" name="phone" placeholder="+1 (310) 000 0000" required autocomplete="tel">
+            </label>
+            <label class="field span-2">
+              <span>Residence of interest</span>
+              <select class="select" name="residence">
+                <option value="Not yet decided">Not yet decided — advise me</option>
+                <option value="Villa Serena">Villa Serena · Point Dume</option>
+                <option value="Azura Penthouse">Azura Penthouse · Wilshire</option>
+                <option value="Oakridge Manor">Oakridge Manor · Montecito</option>
+                <option value="Casa Lumen">Casa Lumen · Palm Springs</option>
+                <option value="Maison Verde">Maison Verde · La Jolla</option>
+                <option value="The Cypress">The Cypress · Napa Valley</option>
+                <option value="Sable House">Sable House · Newport Beach</option>
+                <option value="Aria Residence 12">Aria Residence 12 · Santa Monica</option>
+                <option value="Stonewell Farm">Stonewell Farm · Sonoma</option>
+                <option value="Lumen Terraces">Lumen Terraces · Beverly Hills</option>
+              </select>
+            </label>
+            <div class="field span-2">
+              <span>Preferred contact method *</span>
+              <div class="contact-prefs">
+                <label class="pref"><input type="radio" name="pref" value="WhatsApp" checked required>WhatsApp</label>
+                <label class="pref"><input type="radio" name="pref" value="Email">Email</label>
+                <label class="pref"><input type="radio" name="pref" value="Phone">Telephone</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 2 -->
+        <fieldset class="formstep">
+          <legend class="visually-hidden" style="position:absolute;left:-9999px">Your brief</legend>
+          <span class="eyebrow">Step two</span>
+          <h3 class="h3">What are you looking for?</h3>
+
+          <div class="field">
+            <span>Property type — select all that apply</span>
+            <div class="choicegrid">
+              <label class="choice"><input type="checkbox" name="ptype" value="Villa">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>Villa</span></label>
+              <label class="choice"><input type="checkbox" name="ptype" value="Estate">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>Private estate</span></label>
+              <label class="choice"><input type="checkbox" name="ptype" value="Penthouse">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>Penthouse</span></label>
+              <label class="choice"><input type="checkbox" name="ptype" value="Residence">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>Branded residence</span></label>
+            </div>
+          </div>
+
+          <div class="formgrid">
+            <label class="field">
+              <span>Minimum bedrooms</span>
+              <select class="select" name="beds">
+                <option value="3">3+</option>
+                <option value="4" selected>4+</option>
+                <option value="5">5+</option>
+                <option value="6">6+</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Preferred view — select all</span>
+              <div class="choicegrid" style="grid-template-columns:repeat(auto-fit,minmax(110px,1fr))">
+                <label class="choice"><input type="checkbox" name="view" value="Ocean">
+                  <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span>Ocean</span></label>
+                <label class="choice"><input type="checkbox" name="view" value="Mountain">
+                  <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span>Mountain</span></label>
+                <label class="choice"><input type="checkbox" name="view" value="Golf">
+                  <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span>Golf</span></label>
+                <label class="choice"><input type="checkbox" name="view" value="City">
+                  <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span>City</span></label>
+              </div>
+            </label>
+          </div>
+
+          <div class="field">
+            <span>Budget range — select all that apply</span>
+            <div class="choicegrid">
+              <label class="choice"><input type="checkbox" name="budget" value="$8M – $12M">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>$8M – $12M</span></label>
+              <label class="choice"><input type="checkbox" name="budget" value="$12M – $20M">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>$12M – $20M</span></label>
+              <label class="choice"><input type="checkbox" name="budget" value="$20M – $30M">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>$20M – $30M</span></label>
+              <label class="choice"><input type="checkbox" name="budget" value="$30M+">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>$30M and above</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 3 -->
+        <fieldset class="formstep">
+          <legend class="visually-hidden" style="position:absolute;left:-9999px">Timeline</legend>
+          <span class="eyebrow">Step three</span>
+          <h3 class="h3">When, and how will you purchase?</h3>
+
+          <div class="field">
+            <span>Purchasing timeline *</span>
+            <div class="choicegrid">
+              <label class="choice"><input type="radio" name="timeline" value="Immediately" required>
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>Immediately</span></label>
+              <label class="choice"><input type="radio" name="timeline" value="1 – 3 months">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>1 – 3 months</span></label>
+              <label class="choice"><input type="radio" name="timeline" value="3 – 6 months">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>3 – 6 months</span></label>
+              <label class="choice"><input type="radio" name="timeline" value="Exploring">
+                <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span>Just exploring</span></label>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>Notes for the client desk</span>
+            <textarea class="textarea" name="notes"
+              placeholder="Anything we should know — architectural preferences, architects you admire, schools, timing constraints, or a residence you have already seen."></textarea>
+          </label>
+        </fieldset>
+
+        <!-- STEP 4 -->
+        <fieldset class="formstep">
+          <legend class="visually-hidden" style="position:absolute;left:-9999px">Privacy and agreements</legend>
+          <span class="eyebrow">Step four</span>
+          <h3 class="h3">Privacy &amp; off-market access</h3>
+
+          <div class="consent">
+            <label class="choice">
+              <input type="checkbox" name="nda" value="yes" required>
+              <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="txt">
+                <b>NDA &amp; off-market release *</b>
+                I agree to receive confidential details of off-market and pre-launch
+                residences, and to keep that information private. A formal NDA will be
+                issued by the private office before release.
+              </span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="privacy" value="yes" required>
+              <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="txt">
+                <b>Privacy consent *</b>
+                I consent to Springs Estate holding and processing my details for the
+                purpose of this enquiry, in line with the Privacy Policy. My details
+                will not be sold or shared with third parties.
+              </span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="updates" value="yes">
+              <span class="choice__tick"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="txt">
+                <b>The Springs Letter</b>
+                Send me new listings and off-market releases, monthly. I can
+                unsubscribe at any time.
+              </span>
+            </label>
+          </div>
+
+          <div>
+            <span class="eyebrow" style="display:block;margin-bottom:1.25rem">Review your enquiry</span>
+            <dl class="review-list" id="review-list"></dl>
+          </div>
+        </fieldset>
+
+        <div class="formnav">
+          <button class="btn" type="button" data-back style="visibility:hidden">Back</button>
+          <span class="formnav__progress" data-progress>Step 1 of 4</span>
+          <button class="btn btn--solid" type="button" data-next>Continue</button>
+          <button class="btn btn--gold" type="submit" data-submit style="display:none">Submit Private Enquiry</button>
+        </div>
+      </form>
+
+      <!-- Success state -->
+      <div class="success" id="inquiry-success" role="status" aria-live="polite">
+        <div class="success__ico">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="eyebrow">Enquiry received</span>
+        <h2 class="h2" style="margin:1.25rem 0 1rem">Thank you — your brief is with us</h2>
+        <p class="lede" style="margin:0 auto">
+          A private client advisor will respond within one business day. Your reference
+          is <b style="color:var(--charcoal)" data-ref>—</b>. Quote it in any
+          correspondence and we will pick up exactly where you left off.
+        </p>
+        <div style="margin-top:2.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+          <a class="btn btn--solid" href="residences.html">Browse Residences</a>
+          <a class="btn" href="lifestyle.html">Explore the Lifestyle</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aside -->
+    <aside id="contact-aside" aria-label="Contact details"></aside>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+  tailwind.config = { corePlugins: { preflight: false } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
